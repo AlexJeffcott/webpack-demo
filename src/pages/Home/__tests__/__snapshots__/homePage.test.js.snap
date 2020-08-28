@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage "has correct simple title text" 1`] = `
+<DocumentFragment>
+  <div
+    data-testid="HomePage Component"
+  >
+    <h1>
+      Hello React!
+    </h1>
+    <h1
+      data-testid="Title Component"
+    >
+      Hello Again React!
+    </h1>
+    <p>
+      hi there
+    </p>
+    <img
+      alt="logo"
+      src="png-stub"
+    />
+    <svg-stub />
+  </div>
+</DocumentFragment>
+`;

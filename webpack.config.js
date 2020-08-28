@@ -10,11 +10,13 @@ const CircularDependencyPlugin = require('circular-dependency-plugin')
 module.exports = (env, argv) => {
   if (
     process.env.NODE_ENV !== 'production' &&
-    process.env.NODE_ENV !== 'development'
+    process.env.NODE_ENV !== 'development' &&
+    process.env.NODE_ENV !== 'test'
   )
     throw new Error('is neither development nor production env')
 
-  const isDevelopment = process.env.NODE_ENV === 'development'
+  const isDevelopment =
+    process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'
 
   return {
     mode: process.env.NODE_ENV,
@@ -39,7 +41,7 @@ module.exports = (env, argv) => {
         Components: path.resolve(__dirname, 'src/components/'),
         Assets: path.resolve(__dirname, 'src/assets/'),
       },
-      extensions: ['.js', '.jsx', '.ts', '.tsx', '.css', '.scss'],
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
     },
     plugins: [
       new CleanWebpackPlugin(),

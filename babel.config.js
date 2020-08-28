@@ -1,11 +1,14 @@
 module.exports = (api) => {
   api.cache.using(() => process.env.NODE_ENV)
+  // const isTest = api.env('test')
+  // const isDevelopment = api.env('development')
+  // const isProduction = api.env('production')
+
   return {
     presets: [
       [
         '@babel/preset-env',
         {
-          modules: false,
           targets: {
             browsers: '>1%, ie 11, not op_mini all, not dead',
             node: 12,

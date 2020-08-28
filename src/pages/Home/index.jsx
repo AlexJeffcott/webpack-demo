@@ -1,13 +1,13 @@
 import React from 'react'
-import styles from './home.module'
+import styles from './home.module.css'
 import { CthulhuPNG, CoffeeSVG } from 'Assets'
 import { Title } from 'Components'
 
 function HomePage() {
   return (
-    <div>
+    <div data-testid="HomePage Component">
       <h1 className={styles.title}>Hello React!</h1>
-      <Title>Hello Again React!</Title>
+      <Title title="Hello Again React!" />
       <p>hi there</p>
       <img src={CthulhuPNG} alt="logo" />
       <CoffeeSVG />

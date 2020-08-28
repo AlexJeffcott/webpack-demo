@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component "has correct simple title text" 1`] = `
+<DocumentFragment>
+  <h1
+    data-testid="Title Component"
+  >
+    Hello React!
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`Title Component "has correct tricky title text" 1`] = `
+<DocumentFragment>
+  <h1
+    data-testid="Title Component"
+  >
+    abcdefghijklmnopqrstuvwxyz1234567890!~#@?,.£$%^&*()-=+|/'"äüößú
+  </h1>
+</DocumentFragment>
+`;

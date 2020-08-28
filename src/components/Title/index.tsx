@@ -1,9 +1,14 @@
 import React, { FC } from 'react'
 // @ts-ignore
-import styles from './title.module'
+import styles from './title.module.scss'
 
-const Title: FC = ({ children }) => {
-  return <h1 className={styles.title}>{children}</h1>
+type Props = { title: string }
+const Title: FC<Props> = ({ title }) => {
+  return (
+    <h1 data-testid="Title Component" className={styles.title}>
+      {title}
+    </h1>
+  )
 }
 
 export default Title

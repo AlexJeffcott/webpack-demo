@@ -17,10 +17,10 @@
 - an Express server for local development (serves development and production builds)
 - development build optimised for development
 - production build optimised for production
+- jest testing
 
 ## todo
 - polyfilling
 - normalise css
 - confirm that tree shaking and code splitting etc etc is working correctly
-- jest testing
 - cypress testing
