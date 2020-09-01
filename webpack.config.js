@@ -13,7 +13,7 @@ module.exports = (env, argv) => {
     process.env.NODE_ENV !== 'development' &&
     process.env.NODE_ENV !== 'test'
   )
-    throw new Error('is neither development nor production env')
+    throw new Error('is neither development nor production not test env')
 
   const isDevelopment =
     process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test'
