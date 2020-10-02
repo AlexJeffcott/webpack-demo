@@ -25,3 +25,12 @@
 - confirm that tree shaking and code splitting etc etc is working correctly
 - cypress testing
 - locales and translation
+
+
+## development
+### sample .env
+```text
+#NODE_ENV=production
+NODE_ENV=development
+PORT=3000
+```
